@@ -7,7 +7,7 @@ import authAction from './modules/auth/actions';
 import Login from './pages/login';
 
 class App extends Component {
-  componentWillMount() {
+  componentDidMount() {
       this.props.dispatch(authAction.checkAuth())
   }
 
